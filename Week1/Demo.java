@@ -1,7 +1,7 @@
 
 public class Demo {
     public static void main(String[] args) {
-        Student S1 = new Student();//default constructor is no more accessible as i have added myown
+        Student S1 = new Student();//default constructor is no more accessible as i have added my own
         Student S2 = new Student();
 
     S1.display();
