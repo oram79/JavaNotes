@@ -27,6 +27,10 @@ public class DemoBanking {
        System.out.println(TFCA);
        TFCA.chargeFee();
        System.out.println(TFCA);
+       TFCA.deposit(100);
+       System.out.println(TFCA);
+       TFCA.withdraw(50);
+       System.out.println(TFCA);
 
     }
 }

@@ -1,7 +1,10 @@
 package Week6;
-
 public class CheckingAccount extends BankAccount {
-    private double myInterest;
+    private double myInterest; // instance field
+    public CheckingAccount()
+    {   super();
+        this.myInterest = 0.2;
+    }
     public CheckingAccount(double interest)
     {   super();
         this.myInterest = interest;
@@ -16,16 +19,16 @@ public class CheckingAccount extends BankAccount {
     public void setMyInterest(double myInterest) {
         this.myInterest = myInterest;
     }
-    @Override
-    public double getBalance() {
-        // todo Auto-generated method stub
-        return super.getBalance();
-    }
-    @Override
-    public void setMyBal(double myBal) {
-        // todo Auto-generated method stub
-        super.setMyBal(myBal);
-    }
+    // @Override
+    // public double getBalance() {
+    //     // todo Auto-generated method stub
+    //     return super.getBalance();
+    // }
+    // @Override
+    // public void setMyBal(double myBal) {
+    //     // todo Auto-generated method stub
+    //     super.setMyBal(myBal);
+    // }
     public void applyInterest() {
         //we have interest rate this.myInterest
         //we need to find interest on this current balance --> super.getBalance()
