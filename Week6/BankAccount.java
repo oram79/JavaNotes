@@ -2,16 +2,16 @@ package Week6;
 
 // Code is all base on inheritance Java!! //
 
-public class BankAccount {
+class BankAccount {
     private double myBal;
 
-    public BankAccount() { myBal = 0; }
+    public BankAccount() { myBal = 0.0; }
     public BankAccount(double bal) { this.myBal = bal; }
     public double getBalance() { return myBal; }
     public void setMyBal(double myBal) { this.myBal = myBal;}
     public void deposit(double amount)
     {
-        // myBal = myBal + amount;
+       // myBal = myBal + amount;
         setMyBal(amount + this.myBal);
     }
 
@@ -20,11 +20,12 @@ public class BankAccount {
         if(this.myBal>=amount)
         this.myBal = this.myBal - amount;
         else
-        System.out.println("Do Not Have Enough Balance");
+        System.out.println("Do not have enough balance");
     }
 
     public String toString()
     {
         return ("Balance = " + this.myBal);
     }
-}
+
+  }
